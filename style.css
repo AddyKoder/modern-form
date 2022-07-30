@@ -1,0 +1,181 @@
+*{
+	box-sizing: border-box;
+}
+:root{
+	--bg-color: rgb(13, 24, 33);
+	--primary-color: rgb(64, 250, 157);
+
+}
+
+body{
+	min-height: 100vh;
+	font-family: sans-serif;
+	/* background-color: var(--bg-color); */
+	color:white;
+	background: linear-gradient(90deg,#060c0f, var(--bg-color),#060c0f);
+	/* background-repeat: no-repeat; */
+}
+main{
+	position: relative;
+
+	max-width: 1000px;
+	margin-inline:auto;
+	margin-block:5rem;
+	border-radius: 10px;
+	/* padding: 2rem 1rem; */
+
+	background-color: var(--bg-color);
+
+	border: 1px solid #40f99c59;
+}
+
+h1{
+	font-size: 2.5rem;
+	margin-block: 1rem;
+	color: var(--primary-color);
+
+	margin-left:3rem;
+	letter-spacing: 1px;
+	font-weight: 100;
+	background-color: var(--bg-color);
+
+	padding: 0 .5rem;
+	position: absolute;
+	top: -2.5rem;
+}
+/* ---------------------------------------------------------------- */
+
+
+section.form{
+	padding: 3rem 2rem;
+	border-radius: 10px;
+	padding-bottom: 1rem;
+}
+
+form{
+	
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+
+	color:white;
+}
+
+form input[type="text"],form input[type="number"],form input[type="email"],form input[type="submit"],form select{
+	color:white;
+	width: 100%;
+	padding: 0.85rem 2rem;
+	margin-bottom: 1rem;
+	border:1px solid rgba(255, 255, 255, 0.158);
+
+	font-size: 1.2rem;
+
+	background-color:transparent;
+	border-radius: 4px;
+}
+
+form label{
+	margin-top: 1rem;
+	align-items: flex-start;
+	color:rgba(255, 255, 255, 0.411);
+	position: relative;
+	top: 1ch;
+	background-color: var(--bg-color);
+	width: fit-content;
+	margin: 0 1rem;
+	padding: 0 .5rem;
+
+	font-size: 0.85rem;
+
+	transition: all 0.3s;
+}
+
+form label:hover{
+	letter-spacing: 1px;
+	color: var(--primary-color);
+}
+
+input[type="submit"]{
+	font-size: 1.3rem;
+	border-radius: 0;
+	border: 1px solid var(--primary-color);
+	transition: all 0.3s;
+}
+
+input[type="submit"]:hover{
+	letter-spacing: 2px;
+	cursor: pointer;
+	color:black;
+	background-color: var(--primary-color);
+}
+
+#ss:focus option{
+	padding: 0.85rem 2rem;
+	color:rgba(255, 255, 255, 0.63);
+	line-height: 3rem;
+	background-color: var(--bg-color);
+
+	box-shadow: 0 0 50px 50px black;
+}
+
+p{
+	opacity: 0.7;
+}
+
+.check-submit{
+	display: flex;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+#radio-select{
+	margin: 1rem 0;
+	display: flex;
+		flex-direction: column;
+	justify-content: space-between;
+}
+
+label.content{
+	padding: 1rem 1rem;
+}
+
+label.content:hover{
+	cursor: pointer;
+}
+
+input[type="radio"]{
+	color:var(--primary-color);
+	
+}
+
+.name{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+label.content{
+	position: unset;
+	margin-left: 0;
+	padding-left: 0;
+}
+label.content:hover{
+	letter-spacing: 0;
+}
+
+@media screen and (max-width:800px) {
+	:root{
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width:500px) {
+	.name{
+		flex-direction: column;
+	}
+}
+
+
+
